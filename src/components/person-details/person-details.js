@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import SwapiService from '../../services/swapi-service'
-import './person-details.css';
+import './person-details.css'
 
 export default class PersonDetails extends Component {
 
