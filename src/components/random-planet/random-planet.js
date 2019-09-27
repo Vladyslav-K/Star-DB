@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import PropTypes from 'prop-types'
 import Spinner from '../spinner'
 import ErrorIndicator from '../error-indicator'
 import SwapiService from '../../services/swapi-service'
@@ -13,6 +13,11 @@ export default class RandomPlanet extends Component {
   state = {
     planet: {},
     loading: true
+  }
+
+  static propTypes = {
+    loading: PropTypes.bool,
+    planet: PropTypes.object
   }
 
   componentDidMount() {
